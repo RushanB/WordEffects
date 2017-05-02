@@ -77,7 +77,7 @@ int main(int argc, const char * argv[]) {
                     break;
                 }
                 case 6:{
-                    NSString *spaceCase;
+                    NSString *spaceCase;   //replaces " " with "-"
                     if([inputString containsString:@" "]){
                         spaceCase = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
                     }
@@ -85,7 +85,7 @@ int main(int argc, const char * argv[]) {
                     break;
                 }
                 case 7:{
-                    int words;
+                    int words;       //counts the words
                     for (int i=0; i<[inputString length]; i++){
                         if([inputString characterAtIndex:i] == ' '){
                             words++;
